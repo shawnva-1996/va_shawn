@@ -6,7 +6,10 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
     <style>
       body {
         font-family: "Segoe UI", sans-serif;
@@ -31,7 +34,8 @@
         margin: 30px auto;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
       }
-      th, td {
+      th,
+      td {
         padding: 12px;
         text-align: center;
         border: 1px solid #ccc;
@@ -54,7 +58,7 @@
         background: white;
         padding: 20px;
         border-radius: 8px;
-        box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
       }
       .highlight-box {
         max-width: 700px;
@@ -140,7 +144,7 @@
         background: white;
         border-radius: 8px;
         padding: 20px;
-        box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
       }
       .comparison-card h3 {
         color: #0353a4;
@@ -161,18 +165,19 @@
         margin-left: 8px;
       }
       .badge-best {
-        background-color: #4CAF50;
+        background-color: #4caf50;
         color: white;
       }
       .badge-warning {
-        background-color: #FFC107;
+        background-color: #ffc107;
         color: #333;
       }
       @media (max-width: 768px) {
         table {
           font-size: 0.9rem;
         }
-        th, td {
+        th,
+        td {
           padding: 8px;
         }
       }
@@ -180,78 +185,148 @@
   </head>
   <body>
     <div class="container">
-      <h2 style="text-align: center"><i class="fas fa-star feature-icon"></i> Why PRUIndex Income Boost Stands Out</h2>
+      <h2 style="text-align: center">
+        <i class="fas fa-star feature-icon"></i> Why PRUIndex Income Boost
+        Stands Out
+      </h2>
 
       <div class="highlight-box">
         <p style="font-size: 1rem; color: #0353a4">
-          <strong><i class="fas fa-rocket feature-icon"></i> A first-in-market regular premium participating endowment plan in Singapore Dollars (SGD)</strong> designed to help you:
+          <strong
+            ><i class="fas fa-rocket feature-icon"></i> A first-in-market
+            regular premium participating endowment plan in Singapore Dollars
+            (SGD)</strong
+          >
+          designed to help you:
         </p>
 
-        <ul style="padding-left: 18px; list-style-type: none;">
-          <li><i class="fas fa-chart-line feature-icon"></i> <strong>Generate a new income stream</strong> linked to uncapped Index growth<sup>1</sup></li>
-          <li><i class="fas fa-shield-alt feature-icon"></i> <strong>Safeguard your savings</strong> from market downturns</li>
-          <li><i class="fas fa-sync-alt feature-icon"></i> <strong>Withdraw flexibly</strong> from a dedicated current account — as long as a minimum sum is maintained, your funds stay accessible</li>
+        <ul style="padding-left: 18px; list-style-type: none">
+          <li>
+            <i class="fas fa-chart-line feature-icon"></i>
+            <strong>Generate a new income stream</strong> linked to uncapped
+            Index growth<sup>1</sup>
+          </li>
+          <li>
+            <i class="fas fa-shield-alt feature-icon"></i>
+            <strong>Safeguard your savings</strong> from market downturns
+          </li>
+          <li>
+            <i class="fas fa-sync-alt feature-icon"></i>
+            <strong>Withdraw flexibly</strong> from a dedicated current account
+            — as long as a minimum sum is maintained, your funds stay accessible
+          </li>
         </ul>
 
         <p style="margin-top: 16px">
-          With <strong>PRUIndex Income Boost</strong>, your savings aren't just protected — they're poised to grow, respond to market opportunities, and adapt to your evolving financial needs <i class="fas fa-briefcase feature-icon"></i>
+          With <strong>PRUIndex Income Boost</strong>, your savings aren't just
+          protected — they're poised to grow, respond to market opportunities,
+          and adapt to your evolving financial needs
+          <i class="fas fa-briefcase feature-icon"></i>
         </p>
 
         <div class="tab-container">
-          <div class="tab active" onclick="openTab(event, 'death-benefit')">Death Benefit</div>
-          <div class="tab" onclick="openTab(event, 'capital-protection')">Capital Protection</div>
-          <div class="tab" onclick="openTab(event, 'key-features')">Key Features</div>
+          <div class="tab active" onclick="openTab(event, 'death-benefit')">
+            Death Benefit
+          </div>
+          <div class="tab" onclick="openTab(event, 'capital-protection')">
+            Capital Protection
+          </div>
+          <div class="tab" onclick="openTab(event, 'key-features')">
+            Key Features
+          </div>
         </div>
 
         <div id="death-benefit" class="tab-content active">
-          <h3 style="margin-top: 0; color: #0353a4"><i class="fas fa-shield-alt feature-icon"></i> Death Benefit Coverage</h3>
+          <h3 style="margin-top: 0; color: #0353a4">
+            <i class="fas fa-shield-alt feature-icon"></i> Death Benefit
+            Coverage
+          </h3>
           <ul style="padding-left: 18px">
             <li>
-              <i class="fas fa-check-circle feature-icon"></i> <strong>Standard Benefit:</strong> 101% of total premiums paid OR 101% of the surrender value (whichever is higher) — plus accumulated cash benefits, minus any outstanding charges
+              <i class="fas fa-check-circle feature-icon"></i>
+              <strong>Standard Benefit:</strong> 101% of total premiums paid OR
+              101% of the surrender value (whichever is higher) — plus
+              accumulated cash benefits, minus any outstanding charges
             </li>
             <li>
-              <i class="fas fa-exclamation-circle feature-icon"></i> <strong>Accidental Death Benefit:</strong> 105% of total premiums paid OR 101% of the surrender value — with the same cash benefit inclusion
+              <i class="fas fa-exclamation-circle feature-icon"></i>
+              <strong>Accidental Death Benefit:</strong> 105% of total premiums
+              paid OR 101% of the surrender value — with the same cash benefit
+              inclusion
             </li>
           </ul>
         </div>
 
         <div id="capital-protection" class="tab-content">
-          <h3 style="margin-top: 0; color: #0353a4"><i class="fas fa-lock feature-icon"></i> Capital Protection</h3>
+          <h3 style="margin-top: 0; color: #0353a4">
+            <i class="fas fa-lock feature-icon"></i> Capital Protection
+          </h3>
           <ul style="padding-left: 18px">
             <li>
-              <i class="fas fa-bricks feature-icon"></i> <strong>No negative returns:</strong> your portfolio is shielded by a 0.0% floor rate
+              <i class="fas fa-bricks feature-icon"></i>
+              <strong>No negative returns:</strong> your portfolio is shielded
+              by a 0.0% floor rate
             </li>
             <li>
-              <i class="fas fa-lock feature-icon"></i> <strong>Capital guaranteed at maturity</strong> — receive 100% of your investment back after 15 years
+              <i class="fas fa-lock feature-icon"></i>
+              <strong>Capital guaranteed at maturity</strong> — receive 100% of
+              your investment back after 15 years
             </li>
           </ul>
         </div>
 
         <div id="key-features" class="tab-content">
-          <h3 style="margin-top: 0; color: #0353a4"><i class="fas fa-key feature-icon"></i> Key Features</h3>
+          <h3 style="margin-top: 0; color: #0353a4">
+            <i class="fas fa-key feature-icon"></i> Key Features
+          </h3>
           <ul style="padding-left: 18px">
-            <li><i class="fas fa-calendar-alt feature-icon"></i> <strong>15-year policy term</strong></li>
-            <li><i class="fas fa-dollar-sign feature-icon"></i> <strong>Regular premium payment</strong> options (monthly, quarterly, semi-annually, annually)</li>
-            <li><i class="fas fa-chart-pie feature-icon"></i> <strong>Index-linked returns</strong> with capital protection</li>
-            <li><i class="fas fa-hand-holding-usd feature-icon"></i> <strong>Flexible withdrawals</strong> after accumulation period</li>
+            <li>
+              <i class="fas fa-calendar-alt feature-icon"></i>
+              <strong>15-year policy term</strong>
+            </li>
+            <li>
+              <i class="fas fa-dollar-sign feature-icon"></i>
+              <strong>Regular premium payment</strong> options (monthly,
+              quarterly, semi-annually, annually)
+            </li>
+            <li>
+              <i class="fas fa-chart-pie feature-icon"></i>
+              <strong>Index-linked returns</strong> with capital protection
+            </li>
+            <li>
+              <i class="fas fa-hand-holding-usd feature-icon"></i>
+              <strong>Flexible withdrawals</strong> after accumulation period
+            </li>
           </ul>
         </div>
       </div>
 
-      <h2 style="text-align: center"><i class="fas fa-chart-bar feature-icon"></i> Premium & Return Comparison</h2>
+      <h2 style="text-align: center">
+        <i class="fas fa-chart-bar feature-icon"></i> Premium & Return
+        Comparison
+      </h2>
 
       <div class="comparison-grid">
         <div class="comparison-card">
           <h3><i class="fas fa-box feature-icon"></i> PruFlexiCash</h3>
-          <p><strong>Projected Maturity Value:</strong> <span class="value-highlight">$26,828</span></p>
+          <p>
+            <strong>Projected Maturity Value:</strong>
+            <span class="value-highlight">$26,828</span>
+          </p>
           <p><strong>Total Premiums Paid:</strong> $23,421</p>
           <p><strong>Projected Gain:</strong> +$3,407</p>
           <p><strong>ROI:</strong> +14.6%</p>
         </div>
-        
-        <div class="comparison-card" style="border: 2px solid #0353a4;">
-          <h3><i class="fas fa-rocket feature-icon"></i> PRUIndex Income Boost</h3>
-          <p><strong>Projected Maturity Value:</strong> <span class="value-highlight">$36,287</span> <span class="badge badge-best">BEST</span></p>
+
+        <div class="comparison-card" style="border: 2px solid #0353a4">
+          <h3>
+            <i class="fas fa-rocket feature-icon"></i> PRUIndex Income Boost
+          </h3>
+          <p>
+            <strong>Projected Maturity Value:</strong>
+            <span class="value-highlight">$36,287</span>
+            <span class="badge badge-best">BEST</span>
+          </p>
           <p><strong>Total Premiums Paid:</strong> $24,705.88</p>
           <p><strong>Projected Gain:</strong> +$11,581.12</p>
           <p><strong>ROI:</strong> +46.9%</p>
@@ -262,82 +337,156 @@
         <table>
           <thead>
             <tr>
-              <th style="text-align: left"><i class="fas fa-search feature-icon"></i> Feature</th>
+              <th style="text-align: left">
+                <i class="fas fa-search feature-icon"></i> Feature
+              </th>
               <th><i class="fas fa-box feature-icon"></i> PruFlexiCash</th>
-              <th><i class="fas fa-rocket feature-icon"></i> PRUIndex Income Boost</th>
+              <th>
+                <i class="fas fa-rocket feature-icon"></i> PRUIndex Income Boost
+              </th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td style="text-align: left"><i class="fas fa-money-bill-wave feature-icon"></i> Monthly Premium</td>
+              <td style="text-align: left">
+                <i class="fas fa-money-bill-wave feature-icon"></i> Monthly
+                Premium
+              </td>
               <td>$148.52</td>
               <td><strong>$210.00</strong></td>
             </tr>
             <tr>
-              <td style="text-align: left"><i class="fas fa-calendar-alt feature-icon"></i> Quarterly Premium</td>
+              <td style="text-align: left">
+                <i class="fas fa-calendar-alt feature-icon"></i> Quarterly
+                Premium
+              </td>
               <td>$445.58</td>
               <td><strong>$630.00</strong></td>
             </tr>
             <tr>
-              <td style="text-align: left"><i class="fas fa-calendar feature-icon"></i> Semi-Annual Premium</td>
+              <td style="text-align: left">
+                <i class="fas fa-calendar feature-icon"></i> Semi-Annual Premium
+              </td>
               <td>$882.43</td>
               <td><strong>$1,247.64</strong></td>
             </tr>
             <tr>
-              <td style="text-align: left"><i class="fas fa-calendar-check feature-icon"></i> Annual Premium</td>
+              <td style="text-align: left">
+                <i class="fas fa-calendar-check feature-icon"></i> Annual
+                Premium
+              </td>
               <td>$1,747.37</td>
               <td><strong>$2,470.58</strong></td>
             </tr>
             <tr>
-              <td style="text-align: left"><i class="fas fa-coins feature-icon"></i> Total Lifetime Premium</td>
+              <td style="text-align: left">
+                <i class="fas fa-coins feature-icon"></i> Total Lifetime Premium
+              </td>
               <td>$23,421</td>
               <td><strong>$24,705.88</strong></td>
             </tr>
             <tr style="background-color: #fdf6ec">
-              <td style="text-align: left"><i class="fas fa-chart-line feature-icon"></i> Projected Maturity Value</td>
+              <td style="text-align: left">
+                <i class="fas fa-chart-line feature-icon"></i> Projected
+                Maturity Value
+              </td>
               <td>$26,828</td>
-              <td><strong style="color: #0353a4">$36,287 <span class="badge badge-best">+35.3%</span></strong></td>
+              <td>
+                <strong style="color: #0353a4"
+                  >$36,287 <span class="badge badge-best">+35.3%</span></strong
+                >
+              </td>
             </tr>
             <tr style="background-color: #fdf6ec">
-              <td style="text-align: left"><i class="fas fa-arrow-up feature-icon"></i> Projected Gain</td>
+              <td style="text-align: left">
+                <i class="fas fa-arrow-up feature-icon"></i> Projected Gain
+              </td>
               <td>+$3,407</td>
-              <td><strong style="color: #0353a4">+$11,581.12 <span class="badge badge-best">+240%</span></strong></td>
+              <td>
+                <strong style="color: #0353a4"
+                  >+$11,581.12
+                  <span class="badge badge-best">+240%</span></strong
+                >
+              </td>
             </tr>
             <tr style="background-color: #fdf6ec">
-              <td style="text-align: left"><i class="fas fa-percentage feature-icon"></i> ROI (Return on Investment)</td>
+              <td style="text-align: left">
+                <i class="fas fa-percentage feature-icon"></i> ROI (Return on
+                Investment)
+              </td>
               <td>+14.6%</td>
-              <td><strong style="color: #0353a4">+46.9% <span class="badge badge-best">+221%</span></strong></td>
+              <td>
+                <strong style="color: #0353a4"
+                  >+46.9% <span class="badge badge-best">+221%</span></strong
+                >
+              </td>
             </tr>
           </tbody>
         </table>
       </div>
 
       <div class="highlight-box">
-        <p style="text-align: center; font-size: 1.1rem;">
-          <i class="fas fa-bullseye feature-icon"></i> <strong>Why PRUIndex Wins:</strong> If you're looking to turn smart premiums into powerful returns, PRUIndex doesn't just beat the benchmark—it rewrites it. You'll pay slightly more, but earn <em>way</em> more. No riders, no fluff—just focused financial growth.
+        <p style="text-align: center; font-size: 1.1rem">
+          <i class="fas fa-bullseye feature-icon"></i>
+          <strong>Why PRUIndex Wins:</strong> If you're looking to turn smart
+          premiums into powerful returns, PRUIndex doesn't just beat the
+          benchmark—it rewrites it. You'll pay slightly more, but earn
+          <em>way</em> more. No riders, no fluff—just focused financial growth.
         </p>
       </div>
 
-      <h2 style="text-align: center"><i class="fas fa-money-bill-wave feature-icon"></i> PRUIndex Payment Mode Perks</h2>
+      <h2 style="text-align: center">
+        <i class="fas fa-money-bill-wave feature-icon"></i> PRUIndex Payment
+        Mode Perks
+      </h2>
 
-      <div class="highlight-box" style="background: #f6fcff; border-color: #cce4f7;">
+      <div
+        class="highlight-box"
+        style="background: #f6fcff; border-color: #cce4f7"
+      >
         <p style="font-size: 1rem; color: #333; margin-bottom: 16px">
-          <i class="fas fa-lightbulb feature-icon"></i> <strong>Good to know:</strong> PRUIndex Income Boost rewards smarter payment choices. The more upfront your premiums, the more you save. Here's how each mode compares <em>annually</em>:
+          <i class="fas fa-lightbulb feature-icon"></i>
+          <strong>Good to know:</strong> PRUIndex Income Boost rewards smarter
+          payment choices. The more upfront your premiums, the more you save.
+          Here's how each mode compares <em>annually</em>:
         </p>
         <ul style="list-style: none; padding-left: 0; line-height: 2">
           <li>
-            <strong><i class="fas fa-calendar-day feature-icon"></i> Monthly Payments:</strong> $2,520/year
+            <strong
+              ><i class="fas fa-calendar-day feature-icon"></i> Monthly
+              Payments:</strong
+            >
+            $2,520/year
             <span style="color: #888">(Least discounted)</span>
           </li>
-          <li><strong><i class="fas fa-calendar-week feature-icon"></i> Quarterly Payments:</strong> $2,480/year</li>
-          <li><strong><i class="fas fa-calendar-alt feature-icon"></i> Semi-Annual Payments:</strong> $2,440/year</li>
           <li>
-            <strong><i class="fas fa-calendar-check feature-icon"></i> Annual Payment:</strong>
-            <strong style="color: #0353a4">$2,400/year</strong> <span class="badge badge-best">BEST VALUE</span>
+            <strong
+              ><i class="fas fa-calendar-week feature-icon"></i> Quarterly
+              Payments:</strong
+            >
+            $2,480/year
+          </li>
+          <li>
+            <strong
+              ><i class="fas fa-calendar-alt feature-icon"></i> Semi-Annual
+              Payments:</strong
+            >
+            $2,440/year
+          </li>
+          <li>
+            <strong
+              ><i class="fas fa-calendar-check feature-icon"></i> Annual
+              Payment:</strong
+            >
+            <strong style="color: #0353a4">$2,400/year</strong>
+            <span class="badge badge-best">BEST VALUE</span>
           </li>
         </ul>
         <p style="font-size: 0.95rem; color: #444; margin-top: 12px">
-          <i class="fas fa-brain feature-icon"></i> <strong>Tip:</strong> By opting for annual payments, clients can unlock <strong>$120/year</strong> in savings—equivalent to reducing their total premium outlay without sacrificing growth potential.
+          <i class="fas fa-brain feature-icon"></i> <strong>Tip:</strong> By
+          opting for annual payments, clients can unlock
+          <strong>$120/year</strong> in savings—equivalent to reducing their
+          total premium outlay without sacrificing growth potential.
         </p>
       </div>
 
@@ -345,20 +494,134 @@
       <canvas id="maturityChart"></canvas>
       <canvas id="roiChart"></canvas>
 
-      <div class="disclaimer">
-        <h3 style="color: #d32f2f; margin-top: 0;"><i class="fas fa-exclamation-triangle"></i> Important Disclaimers</h3>
-        <p><strong>Regulatory Compliance:</strong> This document has not been reviewed by the Monetary Authority of Singapore (MAS) and is provided for informational and entertainment purposes only. It should not be construed as financial advice or an offer to buy or sell any financial product.</p>
-        
-        <p><strong>Projections Disclaimer:</strong> All projected values, returns, and performance figures are illustrative only and are not guarantees of future performance. Actual results may differ materially due to market conditions, participation rates, and other factors.</p>
-        
-        <p><strong>Professional Advice:</strong> Prospective investors should seek advice from a qualified financial advisor before making any investment decisions, taking into account their specific financial situation, objectives, and risk tolerance.</p>
-        
-        <p><strong>Past Performance:</strong> Past performance of any index or investment product is not indicative of future performance.</p>
-        
-        <p><sup>1</sup> Subject to participation rate. The participation rate is not guaranteed, varies across different Indices, and is subject to the performance of the Par Fund.</p>
+      <h2 style="text-align: center">
+        🎉 Limited-Time Promotion: Unlock More with PRUIndex
+      </h2>
+
+      <div
+        style="
+          max-width: 700px;
+          margin: auto;
+          background: #fff9ec;
+          border: 1px solid #ffdca7;
+          border-radius: 12px;
+          padding: 20px;
+          box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+          font-family: Segoe UI, sans-serif;
+          line-height: 1.7;
+          font-size: 1rem;
+          color: #333;
+        "
+      >
+        <p>
+          <strong>🗓️ Promotion Period:</strong> Now till
+          <strong>30 November 2025</strong>
+        </p>
+
+        <p>
+          Get a head start with <strong>PRUIndex Income Boost</strong> and enjoy
+          a win-win opportunity to lock in up to
+          <strong>6 months of elevated Promotional Participation Rates</strong>
+          — boosting your monthly income potential as index returns grow 📈
+        </p>
+
+        <h3 style="margin-top: 20px; color: #0353a4">
+          💰 Promotional Participation Rates
+        </h3>
+        <table style="width: 100%; border-collapse: collapse; margin-top: 10px">
+          <thead>
+            <tr style="background-color: #fdf2d3">
+              <th style="border: 1px solid #ccc; padding: 10px">
+                Minimum Premium (SGD)
+              </th>
+              <th style="border: 1px solid #ccc; padding: 10px">
+                Index Option
+              </th>
+              <th style="border: 1px solid #ccc; padding: 10px">
+                Promotional Participation Rate<sup>^</sup>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td style="border: 1px solid #ccc; padding: 10px">
+                All premiums apply
+              </td>
+              <td style="border: 1px solid #ccc; padding: 10px">
+                UBS MASTR SGD Hedged Index
+              </td>
+              <td style="border: 1px solid #ccc; padding: 10px">80.00%</td>
+            </tr>
+            <tr>
+              <td style="border: 1px solid #ccc; padding: 10px">
+                All premiums apply
+              </td>
+              <td style="border: 1px solid #ccc; padding: 10px">
+                S&P 500 FC Index (SGD Hedged)
+              </td>
+              <td style="border: 1px solid #ccc; padding: 10px">40.00%</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p style="margin-top: 16px; font-size: 0.9rem; color: #444">
+          <sup>^</sup> The Promotional Participation Rate is linked to the index
+          option selected at policy inception and remains in effect for up to
+          six months or segments (till Dec 2025). If the prevailing rate exceeds
+          the promotional rate, the higher rate will apply. Thereafter, rates
+          will be declared monthly.
+        </p>
       </div>
 
-      <footer style="text-align: center; padding: 20px; font-size: 0.85rem; color: #666; background: #f9fbfd; margin-top: 40px; border-radius: 8px;">
+      <div class="disclaimer">
+        <h3 style="color: #d32f2f; margin-top: 0">
+          <i class="fas fa-exclamation-triangle"></i> Important Disclaimers
+        </h3>
+        <p>
+          <strong>Regulatory Compliance:</strong> This document has not been
+          reviewed by the Monetary Authority of Singapore (MAS) and is provided
+          for informational and entertainment purposes only. It should not be
+          construed as financial advice or an offer to buy or sell any financial
+          product.
+        </p>
+
+        <p>
+          <strong>Projections Disclaimer:</strong> All projected values,
+          returns, and performance figures are illustrative only and are not
+          guarantees of future performance. Actual results may differ materially
+          due to market conditions, participation rates, and other factors.
+        </p>
+
+        <p>
+          <strong>Professional Advice:</strong> Prospective investors should
+          seek advice from a qualified financial advisor before making any
+          investment decisions, taking into account their specific financial
+          situation, objectives, and risk tolerance.
+        </p>
+
+        <p>
+          <strong>Past Performance:</strong> Past performance of any index or
+          investment product is not indicative of future performance.
+        </p>
+
+        <p>
+          <sup>1</sup> Subject to participation rate. The participation rate is
+          not guaranteed, varies across different Indices, and is subject to the
+          performance of the Par Fund.
+        </p>
+      </div>
+
+      <footer
+        style="
+          text-align: center;
+          padding: 20px;
+          font-size: 0.85rem;
+          color: #666;
+          background: #f9fbfd;
+          margin-top: 40px;
+          border-radius: 8px;
+        "
+      >
         <p>© 2023 Financial Product Comparison. All rights reserved.</p>
         <p>Last updated: <span id="currentDate"></span></p>
       </footer>
@@ -366,18 +629,22 @@
 
     <script>
       // Set current date
-      document.getElementById('currentDate').textContent = new Date().toLocaleDateString('en-SG', {
-        year: 'numeric',
-        month: 'long',
-        day: 'numeric'
-      });
+      document.getElementById("currentDate").textContent =
+        new Date().toLocaleDateString("en-SG", {
+          year: "numeric",
+          month: "long",
+          day: "numeric",
+        });
 
       // Tab functionality
       function openTab(evt, tabName) {
         var i, tabcontent, tab;
         tabcontent = document.getElementsByClassName("tab-content");
         for (i = 0; i < tabcontent.length; i++) {
-          tabcontent[i].className = tabcontent[i].className.replace(" active", "");
+          tabcontent[i].className = tabcontent[i].className.replace(
+            " active",
+            ""
+          );
         }
         tab = document.getElementsByClassName("tab");
         for (i = 0; i < tab.length; i++) {
@@ -387,9 +654,25 @@
         evt.currentTarget.className += " active";
       }
 
-      const years = ["Yr1", "Yr2", "Yr3", "Yr4", "Yr5", "Yr6", "Yr7", "Yr8", "Yr9", "Yr10", "Yr15"];
-      const flexi475 = [0, 700, 2578, 4056, 5532, 6929, 8386, 9909, 11505, 13184, 26828];
-      const index425 = [58, 149, 1538, 2650, 4076, 6088, 8111, 10470, 13184, 16270, 36287];
+      const years = [
+        "Yr1",
+        "Yr2",
+        "Yr3",
+        "Yr4",
+        "Yr5",
+        "Yr6",
+        "Yr7",
+        "Yr8",
+        "Yr9",
+        "Yr10",
+        "Yr15",
+      ];
+      const flexi475 = [
+        0, 700, 2578, 4056, 5532, 6929, 8386, 9909, 11505, 13184, 26828,
+      ];
+      const index425 = [
+        58, 149, 1538, 2650, 4076, 6088, 8111, 10470, 13184, 16270, 36287,
+      ];
 
       // Surrender Chart
       new Chart(document.getElementById("surrenderChart"), {
@@ -402,16 +685,16 @@
               data: flexi475,
               backgroundColor: "rgba(255, 99, 132, 0.7)",
               borderColor: "rgba(255, 99, 132, 1)",
-              borderWidth: 1
+              borderWidth: 1,
             },
             {
               label: "PRUIndex Income Boost @ 4.25%",
               data: index425,
               backgroundColor: "rgba(54, 162, 235, 0.7)",
               borderColor: "rgba(54, 162, 235, 1)",
-              borderWidth: 1
-            }
-          ]
+              borderWidth: 1,
+            },
+          ],
         },
         options: {
           responsive: true,
@@ -419,52 +702,54 @@
             title: {
               display: true,
               text: "Surrender & Maturity Value Comparison (Year 1–10 + 15)",
-              font: { size: 18, weight: 'bold' },
-              padding: { bottom: 20 }
+              font: { size: 18, weight: "bold" },
+              padding: { bottom: 20 },
             },
-            legend: { 
+            legend: {
               position: "bottom",
               labels: {
                 boxWidth: 12,
                 padding: 20,
-                font: { size: 12 }
-              }
+                font: { size: 12 },
+              },
             },
             tooltip: {
               callbacks: {
-                label: function(context) {
-                  return context.dataset.label + ': $' + context.raw.toLocaleString();
-                }
-              }
+                label: function (context) {
+                  return (
+                    context.dataset.label + ": $" + context.raw.toLocaleString()
+                  );
+                },
+              },
             },
             datalabels: {
-              display: false
-            }
+              display: false,
+            },
           },
           scales: {
             y: {
               beginAtZero: true,
-              title: { 
-                display: true, 
+              title: {
+                display: true,
                 text: "Value ($)",
-                font: { weight: 'bold' }
+                font: { weight: "bold" },
               },
               ticks: {
-                callback: function(value) {
-                  return '$' + value.toLocaleString();
-                }
-              }
+                callback: function (value) {
+                  return "$" + value.toLocaleString();
+                },
+              },
             },
             x: {
               title: {
                 display: true,
                 text: "Policy Year",
-                font: { weight: 'bold' }
-              }
-            }
-          }
+                font: { weight: "bold" },
+              },
+            },
+          },
         },
-        plugins: [ChartDataLabels]
+        plugins: [ChartDataLabels],
       });
 
       // Maturity Chart
@@ -478,16 +763,16 @@
               data: [26828],
               backgroundColor: "rgba(255, 99, 132, 0.7)",
               borderColor: "rgba(255, 99, 132, 1)",
-              borderWidth: 1
+              borderWidth: 1,
             },
             {
               label: "PRUIndex Income Boost @ 4.25%",
               data: [36287],
               backgroundColor: "rgba(54, 162, 235, 0.7)",
               borderColor: "rgba(54, 162, 235, 1)",
-              borderWidth: 1
-            }
-          ]
+              borderWidth: 1,
+            },
+          ],
         },
         options: {
           responsive: true,
@@ -495,47 +780,49 @@
             title: {
               display: true,
               text: "Maturity Value Comparison (Year 15)",
-              font: { size: 18, weight: 'bold' },
-              padding: { bottom: 20 }
+              font: { size: 18, weight: "bold" },
+              padding: { bottom: 20 },
             },
-            legend: { 
+            legend: {
               position: "bottom",
               labels: {
                 boxWidth: 12,
                 padding: 20,
-                font: { size: 12 }
-              }
+                font: { size: 12 },
+              },
             },
             tooltip: {
               callbacks: {
-                label: function(context) {
-                  return context.dataset.label + ': $' + context.raw.toLocaleString();
-                }
-              }
+                label: function (context) {
+                  return (
+                    context.dataset.label + ": $" + context.raw.toLocaleString()
+                  );
+                },
+              },
             },
             datalabels: {
-              anchor: 'end',
-              align: 'top',
-              formatter: function(value) {
-                return '$' + value.toLocaleString();
+              anchor: "end",
+              align: "top",
+              formatter: function (value) {
+                return "$" + value.toLocaleString();
               },
               font: {
-                weight: 'bold'
-              }
-            }
+                weight: "bold",
+              },
+            },
           },
           scales: {
             y: {
               beginAtZero: true,
               ticks: {
-                callback: function(value) {
-                  return '$' + value.toLocaleString();
-                }
-              }
-            }
-          }
+                callback: function (value) {
+                  return "$" + value.toLocaleString();
+                },
+              },
+            },
+          },
         },
-        plugins: [ChartDataLabels]
+        plugins: [ChartDataLabels],
       });
 
       // ROI Chart
@@ -549,16 +836,16 @@
               data: [14.6],
               backgroundColor: "rgba(255, 99, 132, 0.7)",
               borderColor: "rgba(255, 99, 132, 1)",
-              borderWidth: 1
+              borderWidth: 1,
             },
             {
               label: "PRUIndex Income Boost @ 4.25%",
               data: [46.9],
               backgroundColor: "rgba(54, 162, 235, 0.7)",
               borderColor: "rgba(54, 162, 235, 1)",
-              borderWidth: 1
-            }
-          ]
+              borderWidth: 1,
+            },
+          ],
         },
         options: {
           responsive: true,
@@ -566,34 +853,34 @@
             title: {
               display: true,
               text: "Return on Investment (ROI) Comparison",
-              font: { size: 18, weight: 'bold' },
-              padding: { bottom: 20 }
+              font: { size: 18, weight: "bold" },
+              padding: { bottom: 20 },
             },
-            legend: { 
+            legend: {
               position: "bottom",
               labels: {
                 boxWidth: 12,
                 padding: 20,
-                font: { size: 12 }
-              }
+                font: { size: 12 },
+              },
             },
             tooltip: {
               callbacks: {
-                label: function(context) {
-                  return context.dataset.label + ': ' + context.raw + '%';
-                }
-              }
+                label: function (context) {
+                  return context.dataset.label + ": " + context.raw + "%";
+                },
+              },
             },
             datalabels: {
-              anchor: 'end',
-              align: 'top',
-              formatter: function(value) {
-                return value + '%';
+              anchor: "end",
+              align: "top",
+              formatter: function (value) {
+                return value + "%";
               },
               font: {
-                weight: 'bold'
-              }
-            }
+                weight: "bold",
+              },
+            },
           },
           scales: {
             y: {
@@ -601,17 +888,17 @@
               title: {
                 display: true,
                 text: "ROI (%)",
-                font: { weight: 'bold' }
+                font: { weight: "bold" },
               },
               ticks: {
-                callback: function(value) {
-                  return value + '%';
-                }
-              }
-            }
-          }
+                callback: function (value) {
+                  return value + "%";
+                },
+              },
+            },
+          },
         },
-        plugins: [ChartDataLabels]
+        plugins: [ChartDataLabels],
       });
     </script>
   </body>
