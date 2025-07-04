@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Investment Comparison</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <style>
+    body { font-family: Arial, sans-serif; background: #f7f9fc; margin: 40px; }
+    h2 { color: #333; }
+    canvas { max-width: 900px; margin-top: 40px; }
+  </style>
+</head>
+<body>
+  <h2>💰 Investment Comparison: PruFlexiCash vs. PruIndex Income Boost</h2>
+  <canvas id="surrenderChart"></canvas>
+  <canvas id="maturityChart"></canvas>
+
+  <script>
+    const years = ["Yr1", "Yr2", "Yr3", "Yr4", "Yr5", "Yr6", "Yr7", "Yr8", "Yr9", "Yr10"];
+
+    const flexi475 = [0, 700, 1857, 2592, 3304, 3912, 4558, 5245, 5981, 6772];
+    const index425 = [58, 149, 1538, 2650, 4076, 6088, 8111, 10470, 13184, 16270];
+
+    const surrenderChart = new Chart(document.getElementById('surrenderChart'), {
+      type: 'bar',
+      data: {
+        labels: years,
+        datasets: [
+          {
+            label: "PruFlexiCash @ 4.75%",
+            data: flexi475,
+            backgroundColor: "rgba(255, 99, 132, 0.7)"
+          },
+          {
+            label: "PruIndex Income Boost @ 4.25%",
+            data: index425,
+            backgroundColor: "rgba(54, 162, 235, 0.7)"
+          }
+        ]
+      },
+      options: {
+        responsive: true,
+        plugins: {
+          title: {
+            display: true,
+            text: "📊 Surrender Value Comparison (Year 1-10)"
+          },
+          legend: {
+            position: 'bottom'
+          }
+        },
+        scales: {
+          y: {
+            beginAtZero: true,
+            title: {
+              display: true,
+              text: "$ Amount"
+            }
+          }
+        }
+      }
+    });
+
+    const maturityChart = new Chart(document.getElementById('maturityChart'), {
+      type: 'bar',
+      data: {
+        labels: ["Maturity"],
+        datasets: [
+          {
+            label: "PruFlexiCash @ 4.75%",
+            data: [15567],
+            backgroundColor: "rgba(255, 99, 132, 0.7)"
+          },
+          {
+            label: "PruIndex Income Boost @ 4.25%",
+            data: [36287],
+            backgroundColor: "rgba(54, 162, 235, 0.7)"
+          }
+        ]
+      },
+      options: {
+        plugins: {
+          title: {
+            display: true,
+            text: "🚀 Maturity Value Comparison"
+          },
+          legend: {
+            position: 'bottom'
+          }
+        },
+        scales: {
+          y: {
+            beginAtZero: true,
+            title: {
+              display: true,
+              text: "$ Amount"
+            }
+          }
+        }
+      }
+    });
+  </script>
+</body>
+</html>
